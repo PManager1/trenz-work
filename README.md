@@ -12,6 +12,8 @@ $ NODE_ENV=production node app.js
 
 
 # ON SERVER run following command
+$ sudo npm install
+$ sudo npm install gulp
 $ sudo npm install --save gulp-sass
 $ sudo node server.js
 
