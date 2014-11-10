@@ -1,12 +1,10 @@
-'use strict';
+"use strict";
 
 require('angular');
 
 
 var uiRoute = require('angular-ui-router'); 
-
-
-console.log(' ~~~~~~~~~~~~~~~~~~~ uiRoute =', uiRoute);
+// console.log(' ~~~~~~~~~~~~~~~~~~~ uiRoute =', uiRoute);
 
 var app = angular.module('MyApp', [uiRoute]);
 
@@ -15,13 +13,15 @@ require('./directives/ExampleDirective').inject(app);
 
 
 
-app.config(function($locationProvider, $stateProvider) {
+app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true); // ori
+
+    $urlRouterProvider.otherwise('/');  // new  // or ('/home')
 
   $stateProvider
   .state('home', {
-    url: '/',
+    url: '/home',
     templateUrl: 'views/home.html',
     // controller: require('./controllers/ExampleCtrl').inject(app)
     controller: require('./controllers/HomeCtrl').inject(app)
