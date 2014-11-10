@@ -17,7 +17,7 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 
   // $locationProvider.html5Mode(true); // ori
 
-    $urlRouterProvider.otherwise('/');  // new  // or ('/home')
+    $urlRouterProvider.otherwise('/home'); 
 
   $stateProvider
   .state('home', {
@@ -55,6 +55,11 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
   });
 
 });
+
+
+require('./services/GA');
+
+
 
 app.run();
 

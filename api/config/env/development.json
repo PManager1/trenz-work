@@ -1,4 +1,4 @@
 {
-  "db": "mongodb://localhost/your-development-db",
+  "db": "mongodb://localhost/trenz-dev-db",
   "port": 9090
 }

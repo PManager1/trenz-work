@@ -62,5 +62,5 @@ app.get('*', function(req, res) {
 
 if(!module.parent) {
   app = app.listen(config.port);
-  console.log('App listening on port 8080');
+  console.log('App listening on port 9090');
 }

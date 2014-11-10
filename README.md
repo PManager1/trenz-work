@@ -1,14 +1,28 @@
+# env setup 
+
+Before running your app, you can do this in console, 
+$ export NODE_ENV=production 
+
+
+or you can run your app like this: 
+$ NODE_ENV=production node app.js
+
+
+
+
+
+# ON SERVER run following command
+$ sudo npm install --save gulp-sass
+$ sudo node server.js
+
+
+# ON Local run following command
+
 
 
 
 
 http://localhost:9090/
-
-
-
-
-
-
 
 
 # Frickle
