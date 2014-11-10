@@ -5,7 +5,7 @@ $ export NODE_ENV=production
 
 
 or you can run your app like this: 
-$ NODE_ENV=production node app.js
+$ sudo NODE_ENV=production node server.js
 
 
 
